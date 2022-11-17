@@ -714,7 +714,7 @@ textarea::placeholder {
 }
 
 .team-list__name-person {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -725,7 +725,7 @@ textarea::placeholder {
 }
 
 .team-list__job-person {
-  margin: 0;
+  margin: 0 auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
