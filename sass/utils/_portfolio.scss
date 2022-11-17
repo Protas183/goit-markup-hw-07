@@ -25,7 +25,7 @@
     padding-right: 22px;
     height: 38px;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: $font-weight-name;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
@@ -98,7 +98,7 @@
 .project-text {
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 400;
+    font-weight: $font-weight-text;
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
@@ -125,7 +125,7 @@
 
 .project_name {
     margin: 0;
-    font-weight: 700;
+    font-weight: $font-weight-title;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -135,7 +135,7 @@
 
 .project_filter {
     margin: 0;
-    font-weight: 400;
+    font-weight: $font-weight-text;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;

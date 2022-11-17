@@ -28,7 +28,7 @@
 .hat_words {
     margin: 0 auto;
     width: 800px;
-    font-weight: 900;
+    font-weight: $font-weight-hat;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
@@ -63,7 +63,7 @@
     justify-content: center;
     margin: 0 auto;
 
-    font-weight: 700;
+    font-weight: $font-weight-title;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
@@ -138,7 +138,7 @@
     margin-bottom: 12px;
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 700;
+    font-weight: $font-weight-title;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
@@ -189,7 +189,7 @@
     margin-bottom: 4px;
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 400;
+    font-weight: $font-weight-text;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -215,7 +215,7 @@ textarea {
     &::placeholder {
         font-family: "Roboto";
         font-style: normal;
-        font-weight: 400;
+        font-weight: $font-weight-text;
         font-size: 12px;
         line-height: 1.16;
         letter-spacing: 0.01em;
@@ -252,7 +252,7 @@ textarea {
 .checkbox_text {
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 400;
+    font-weight: $font-weight-text;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -262,7 +262,7 @@ textarea {
 .text_check_link {
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 400;
+    font-weight: $font-weight-text;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -288,7 +288,7 @@ textarea {
 
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 700;
+    font-weight: $font-weight-title;
     font-size: 16px;
     line-height: 1.87;
     display: flex;
@@ -370,7 +370,7 @@ textarea {
 .features_tittle {
     margin: 0;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: $font-weight-title;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -380,7 +380,7 @@ textarea {
 
 .features_describe {
     margin: 0;
-    font-weight: 400;
+    font-weight: $font-weight-text;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -390,7 +390,7 @@ textarea {
 .text_what_do_we_do {
     margin: 0;
     margin-bottom: 50px;
-    font-weight: 700;
+    font-weight: $font-weight-title;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -424,7 +424,7 @@ textarea {
 
 .front_text {
     height: 70px;
-    font-weight: 700;
+    font-weight: $font-weight-title;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -434,7 +434,7 @@ textarea {
 .team-title {
     margin: 0;
     margin-bottom: 50px;
-    font-weight: 700;
+    font-weight: $font-weight-title;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -471,7 +471,7 @@ textarea {
 .team-list__name-person {
     margin: 0;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: $font-weight-name;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -481,7 +481,7 @@ textarea {
 
 .team-list__job-person {
     margin: 0;
-    font-weight: 400;
+    font-weight: $font-weight-text;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -539,7 +539,7 @@ textarea {
 .clients-title {
     margin: 0;
     margin-bottom: 50px;
-    font-weight: 700;
+    font-weight: $font-weight-title;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
