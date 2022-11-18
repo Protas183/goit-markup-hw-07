@@ -1,6 +1,14 @@
-@import "./components/page-header";
 @import "./utils/vars";
-@import "./utils/index";
-@import "./utils/_portfolio.scss";
+@import "./components/page-header";
+@import "./utils/index/index-body";
+@import "./utils/index/hat";
+@import "./utils/index/modal";
+@import "./utils/index/features";
+@import "./utils/index/work";
+@import "./utils/index/team";
+@import "./utils/index/clients";
+@import "./utils/portfolio/portfolio-body";
+@import "./utils/portfolio/btn-filter";
+@import "./utils/portfolio/project";
 @import "./components/page-footer";
 
