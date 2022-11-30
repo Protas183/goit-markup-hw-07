@@ -34,11 +34,23 @@
 }
 
 .menu_nav {
-    width: 300px;
-    margin: 0;
-    padding: 0;
-    margin-left: 93px;
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        width: 300px;
+        margin: 0;
+        padding: 0;
+        margin-left: 93px;
+        display: flex;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        width: 300px;
+        margin: 0;
+        padding: 0;
+        margin-left: 93px;
+        display: flex;
+    }
 }
 
 .menu-nav__list{
@@ -78,10 +90,23 @@
 }
 
 .menu_contacts {
-    display: flex;
-    margin: 0;
-    margin-left: auto;
-    padding: 0;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-right: auto;
+        }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        margin-left: auto;
+        padding: 0;
+}
+
 }
 
 .menu-contacts__list {

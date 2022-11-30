@@ -2,18 +2,57 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background: #2f303a;
+
 }
 
-.footer_place_text {
-    display: flex;
+.footer_navigation {
+    margin: 0;
+    margin-left: 0;
+    display: flex;   
     flex-direction: column;
-    justify-content: center;
+
+
+    @media screen and (min-width: $tablet) {            
+        margin: 0;     
+    
+        }
+
+    @media screen and (min-width: $desktop) {           
+        margin: 0;
+        display: flex;
+        align-items: baseline;    
+        flex-direction: row;  
+        }
+}
+
+.footer_navigation_main {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet) {
+        width: 231px;
+        margin: 0;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;    
+        }
+
+    @media screen and (min-width: $desktop) {
+        width: 231px;
+        margin: 0;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        
+}
 }
 
 .webstudio_footer {
     display: block;
+    margin: 0 auto;
     margin-bottom: 20px;
-    width: 140px;
+    width: 154px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -26,23 +65,68 @@
     &:focus {
         color: #56abf0;
     }
+
+    @media screen and (min-width: $tablet) {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+    margin: 0;        
+    margin-bottom: 20px;
+    }
 }
 
 .webstudio_footer_color {
     color: #ffffff;
 }
 
+.footer_place_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet) {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+    @media screen and (min-width: $desktop) {
+            margin: 0;
+        }
+
+}
 
 .address {
-    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     padding-left: 0;
     list-style-type: none;
+
+    @media screen and (min-width: $tablet) {
+            margin: 0;
+        }
+
+    @media screen and (min-width: $desktop) {
+            margin: 0;
+            width: 231px;
+        }
 }
 
 .address_li {
     margin-top: 9px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet) {
+            margin: 0;
+        }
+
+    @media screen and (min-width: $desktop) {
+            margin: 0;
+        }
 }
 
 .map_address {
@@ -87,37 +171,78 @@
     }
 }
 
-.footer_navigation {
-    margin: 0;
-    display: flex;
-    align-items: baseline;
-}
-
 .join_social {
     margin: 0;
-    margin-left: 70px;
+    width: 450px;
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        margin: 0;
+        margin-top: 5px;
+            width: 738px;
+            display: flex;           
+            flex-direction: column;
+        }
+
+    @media screen and (min-width: $desktop) {
+        position: relative;
+        margin: 0;
+        margin-left: 70px;
+        width: 206px;
+        }
 }
 
 .join {
     margin: 0;
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+
+    @media screen and (min-width: $tablet) {
+            margin: 0; 
+            margin-bottom: 20px;
+            margin-right: 40px;
+            display: flex;
+            justify-content: end;
+        }
+
+    @media screen and (min-width: $desktop) {
+            margin: 0;    
+            margin-bottom: 20px;
+            justify-content: start;
+
+        }
 }
 
 .social_footer {
     display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
     margin-top: 20px;
+    margin-bottom: 20px;
     list-style: none;
 
     & .li_social_footer:not(:last-child) {
         margin-right: 10px;
     }
+
+        @media screen and (min-width: $tablet) {
+            margin: 0;
+            display: flex;
+                justify-content: end;
+            
+        }
+
+         @media screen and (min-width: $desktop) {
+             margin: 0;
+            width: 206px;
+         }
 }
 
 .footer_icon_href {
@@ -144,16 +269,37 @@
 
 .subscribe {
     margin: 0;
-    margin-left: 93px;
+    width: 450px;
+    
+    @media screen and (min-width: $tablet) {
+            margin: 0;
+            width: 738px;
+        }
+
+    @media screen and (min-width: $desktop) {
+            margin-left: 93px;
+            width: 570px;
+        }
 }
 
 .sub_element {
-    display: flex;
-    justify-content: space-between;
-    width: 570px;
+    width: 450px;
+
+    @media screen and (min-width: $tablet) {
+            margin: 0 auto;
+            width: 450px;
+        }
+
+    @media screen and (min-width: $desktop) { 
+        display: flex;
+        width: 570px;
+    }
 }
 
 .subscribe_text {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     margin-bottom: 20px;
     font-family: "Roboto";
     font-style: normal;
@@ -163,22 +309,45 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+
+    @media screen and (min-width: $desktop) {
+            margin: 0;
+            margin-bottom: 20px;
+            width: 207px;
+            
+        }
 }
 
 .input_footer {
+    
     margin: 0;
     padding: 0;
     padding: 10px;
-    width: 358px;
+    margin-bottom: 20px;
+
     height: 50px;
+    width: 450px;
     background: #2f303a;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    @media screen and (min-width: $tablet) {
+            margin: 0;
+            margin-bottom: 20px;
+            width: 450px;
+        }
+
+    @media screen and (min-width: $desktop) {
+            width: 358px;
+        }
 }
 
 .btn_sub {
+    display: flex;
+    margin: 0 auto;
+
     width: 200px;
     height: 50px;
     font-family: "Roboto";
@@ -193,13 +362,13 @@
     border: 0;
     cursor: pointer;
     transition: 250ms;
-    display: flex;
-    margin: 0;
+    
 
     &:hover,
     &:focus {
         background: #68bbff;
     }
+
 }
 
 .sub_text {

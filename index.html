@@ -45,9 +45,48 @@
                             +38 096 111 11 11</a>
                     </li>
                 </ul>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40" height="40" class="burger-menu__icon">
+                        <use href="./img/icons.svg/burger-menu.svg#burger-menu"></use>
+                    </svg>
+                </button>
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="menu-toggle js-close-menu">
+                        <svg width="40" height="40">
+                            <use href="./img/icons.svg/mob-menu.svg#close-mob-menu" class="menu-close-icon"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="mobile-menu">
+                        <li class="mobile-menu__list"><a href="./index.html" class="link">Студія</a></li>
+                        <li class="mobile-menu__list"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+                        <li class="mobile-menu__list"><a href="./index.html" class="link">Контакти</a></li>
+                    </ul>
+                    <ul class="mobile-menu__contacts">
+                        <li class="mobile-menu__number"><a class="mobile-menu__number__link"
+                                href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu__mail"><a class="mobile-menu__mail__link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile-menu__socials">
+                        <li class="mobile-menu__socials__list"><a href=""
+                                class="mobile-menu__socials__link">Instagram</a><span
+                                class="mobile-menu__socials-box"></span></li>
+                        <li class="mobile-menu__socials__list"><a href="" class="mobile-menu__socials__link">Twitter</a>
+                            <span class="mobile-menu__socials-box"></span>
+                        </li>
+                        <li class="mobile-menu__socials__list"><a href=""
+                                class="mobile-menu__socials__link">Facebook</a><span
+                                class="mobile-menu__socials-box"></span></li>
+                        <li class="mobile-menu__socials__list"><a href=""
+                                class="mobile-menu__socials__link">LinkedIn</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
+
     <main>
         <section class="section_main_hat">
             <div class="container">
@@ -109,20 +148,40 @@
             <div class="container">
                 <ul class="features">
                     <li class="features-list">
+                        <div class="features-img">
+                            <svg class="features-icon">
+                                <use href="./img/icons.svg/features.svg#antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="features_tittle">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="features_describe">Ідейні міркування, і навіть початок повсякденної роботи з
                             формування позиції.</p>
                     </li>
                     <li class="features-list">
+                        <div class="features-img">
+                            <svg class="features-icon">
+                                <use href="./img/icons.svg/features.svg#clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="features_tittle">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="features_describe">Завдання організації, особливо рамки і місце навчання кадрів тягне
                             у себе.</p>
                     </li>
                     <li class="features-list">
+                        <div class="features-img">
+                            <svg class="features-icon">
+                                <use href="./img/icons.svg/features.svg#diagram"></use>
+                            </svg>
+                        </div>
                         <h3 class="features_tittle">ПЛАНУВАННЯ</h3>
                         <p class="features_describe">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
                     <li class="features-list">
+                        <div class="features-img">
+                            <svg class="features-icon">
+                                <use href="./img/icons.svg/features.svg#astro"></use>
+                            </svg>
+                        </div>
                         <h3 class="features_tittle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p class="features_describe">Значимість цих проблем настільки очевидна, що реалізація планових
                             завдань.</p>
@@ -159,7 +218,7 @@
                 <div>
                     <h2 class="team-title">Наша команда</h2>
                     <ul class="team">
-                        <li class="team-list"><img width="270" height="280" src="img/index/person_1.jpg" alt="Фото">
+                        <li class="team-list"><img class="team-img" src="img/index/person_1.jpg" alt="Фото">
                             <div class="team-list__person">
                                 <div class="team-list__describe">
                                     <p class="team-list__name-person">Ігор Дем'яненко</p>
@@ -197,7 +256,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-list"><img width="270" height="280" src="img/index/person_2.jpg" alt="Фото">
+                        <li class="team-list"><img class="team-img" src="img/index/person_2.jpg" alt="Фото">
                             <div class="team-list__person">
                                 <div class="team-list__describe">
                                     <p class="team-list__name-person">Ольга Рєпіна</p>
@@ -235,7 +294,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-list"><img width="270" height="280" src="img/index/person_3.jpg" alt="Фото">
+                        <li class="team-list"><img class="team-img" src="img/index/person_3.jpg" alt="Фото">
                             <div class="team-list__person">
                                 <div class="team-list__describe">
                                     <p class="team-list__name-person">Микола Тарасов</p>
@@ -273,7 +332,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-list"><img width="270" height="280" src="img/index/person_4.jpg" alt="Фото">
+                        <li class="team-list"><img class="team-img" src="img/index/person_4.jpg" alt="Фото">
                             <div class="team-list__person">
                                 <div class="team-list__describe">
                                     <p class="team-list__name-person ">Михайло Єрмаков</p>
@@ -370,7 +429,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer_navigation">
-                <div>
+                <div class="footer_navigation_main">
                     <a class="webstudio_footer" href="#">Web<span class="webstudio_footer_color">Studio</span></a>
                     <address class="footer_place_text">
                         <ul class="address">
@@ -433,6 +492,10 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 
 </body>
 

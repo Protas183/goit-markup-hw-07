@@ -1,5 +1,8 @@
 .section_what_do_we_do {
     padding-bottom: 94px;
+     @media screen and (max-width: 1199px) {
+        display: none;
+     }
 }
 
 .text_what_do_we_do {

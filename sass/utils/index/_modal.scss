@@ -18,8 +18,8 @@
 }
 
 .modal {
-    height: 581px;
-    width: 528px;
+    height: 609px;
+    width: 450px;
     padding: 40px;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -29,6 +29,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (min-width: $tablet) {
+        
+    }
+
+    @media screen and (min-width: $desktop) {
+        height: 581px;
+        width: 528px;
+        
+    }
 }
 
 .close_button {
@@ -62,8 +72,13 @@
 }
 
 .form_title {
+    display: flex;
+    align-content: center;
+    text-align: center;
     margin: 0;
     margin-bottom: 12px;
+    width: 370px;
+    height: 60px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: $font-weight-title;
@@ -71,8 +86,11 @@
     line-height: 1.15;
     letter-spacing: 0.03em;
     color: #212121;
-    display: flex;
-    justify-content: center;
+    
+    @media screen and (min-width: $desktop) {
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .form_field {
@@ -181,27 +199,37 @@ textarea {
     font-family: "Roboto";
     font-style: normal;
     font-weight: $font-weight-text;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: #757575;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
 
 .text_check_link {
     font-family: "Roboto";
     font-style: normal;
     font-weight: $font-weight-text;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: #2196f3;
     margin-left: 3px;
     text-decoration: underline;
+
+    @media screen and (min-width: $desktop) {
+            font-size: 14px;
+            line-height: 24px;
+        }
 }
 
 .btn_form {
     display: flex;
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
     margin-top: 30px;
     width: 200px;
